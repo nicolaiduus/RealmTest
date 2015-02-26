@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		A0FBDE661A9F248F0095FB34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE651A9F248F0095FB34 /* main.m */; };
 		A0FBDE691A9F248F0095FB34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE681A9F248F0095FB34 /* AppDelegate.m */; };
-		A0FBDE6C1A9F248F0095FB34 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE6B1A9F248F0095FB34 /* FirstViewController.m */; };
-		A0FBDE6F1A9F248F0095FB34 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE6E1A9F248F0095FB34 /* SecondViewController.m */; };
 		A0FBDE721A9F248F0095FB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0FBDE701A9F248F0095FB34 /* Main.storyboard */; };
 		A0FBDE741A9F248F0095FB34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0FBDE731A9F248F0095FB34 /* Images.xcassets */; };
 		A0FBDE771A9F248F0095FB34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0FBDE751A9F248F0095FB34 /* LaunchScreen.xib */; };
 		A0FBDE831A9F248F0095FB34 /* RealmTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE821A9F248F0095FB34 /* RealmTestTests.m */; };
+		A0FBDE8E1A9F26E50095FB34 /* PersonsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE8D1A9F26E50095FB34 /* PersonsTableViewController.m */; };
+		A0FBDE911A9F270B0095FB34 /* AddPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE901A9F270B0095FB34 /* AddPersonViewController.m */; };
+		A0FBDE931A9F2FED0095FB34 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FBDE921A9F2FED0095FB34 /* Realm.framework */; };
+		A0FBDE951A9F303C0095FB34 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FBDE941A9F303C0095FB34 /* libc++.dylib */; };
+		A0FBDE981A9F313F0095FB34 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FBDE971A9F313F0095FB34 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +36,20 @@
 		A0FBDE651A9F248F0095FB34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0FBDE671A9F248F0095FB34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0FBDE681A9F248F0095FB34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A0FBDE6A1A9F248F0095FB34 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A0FBDE6B1A9F248F0095FB34 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		A0FBDE6D1A9F248F0095FB34 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A0FBDE6E1A9F248F0095FB34 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A0FBDE711A9F248F0095FB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0FBDE731A9F248F0095FB34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0FBDE761A9F248F0095FB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A0FBDE7C1A9F248F0095FB34 /* RealmTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FBDE811A9F248F0095FB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0FBDE821A9F248F0095FB34 /* RealmTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmTestTests.m; sourceTree = "<group>"; };
+		A0FBDE8C1A9F26E50095FB34 /* PersonsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonsTableViewController.h; sourceTree = "<group>"; };
+		A0FBDE8D1A9F26E50095FB34 /* PersonsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonsTableViewController.m; sourceTree = "<group>"; };
+		A0FBDE8F1A9F270B0095FB34 /* AddPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPersonViewController.h; sourceTree = "<group>"; };
+		A0FBDE901A9F270B0095FB34 /* AddPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPersonViewController.m; sourceTree = "<group>"; };
+		A0FBDE921A9F2FED0095FB34 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		A0FBDE941A9F303C0095FB34 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A0FBDE961A9F313F0095FB34 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A0FBDE971A9F313F0095FB34 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FBDE951A9F303C0095FB34 /* libc++.dylib in Frameworks */,
+				A0FBDE931A9F2FED0095FB34 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,8 @@
 		A0FBDE571A9F248F0095FB34 = {
 			isa = PBXGroup;
 			children = (
+				A0FBDE941A9F303C0095FB34 /* libc++.dylib */,
+				A0FBDE921A9F2FED0095FB34 /* Realm.framework */,
 				A0FBDE621A9F248F0095FB34 /* RealmTest */,
 				A0FBDE7F1A9F248F0095FB34 /* RealmTestTests */,
 				A0FBDE611A9F248F0095FB34 /* Products */,
@@ -84,12 +95,12 @@
 		A0FBDE621A9F248F0095FB34 /* RealmTest */ = {
 			isa = PBXGroup;
 			children = (
-				A0FBDE671A9F248F0095FB34 /* AppDelegate.h */,
-				A0FBDE681A9F248F0095FB34 /* AppDelegate.m */,
-				A0FBDE6A1A9F248F0095FB34 /* FirstViewController.h */,
-				A0FBDE6B1A9F248F0095FB34 /* FirstViewController.m */,
-				A0FBDE6D1A9F248F0095FB34 /* SecondViewController.h */,
-				A0FBDE6E1A9F248F0095FB34 /* SecondViewController.m */,
+				A0FBDE961A9F313F0095FB34 /* Person.h */,
+				A0FBDE971A9F313F0095FB34 /* Person.m */,
+				A0FBDE8F1A9F270B0095FB34 /* AddPersonViewController.h */,
+				A0FBDE901A9F270B0095FB34 /* AddPersonViewController.m */,
+				A0FBDE8C1A9F26E50095FB34 /* PersonsTableViewController.h */,
+				A0FBDE8D1A9F26E50095FB34 /* PersonsTableViewController.m */,
 				A0FBDE701A9F248F0095FB34 /* Main.storyboard */,
 				A0FBDE731A9F248F0095FB34 /* Images.xcassets */,
 				A0FBDE751A9F248F0095FB34 /* LaunchScreen.xib */,
@@ -101,6 +112,8 @@
 		A0FBDE631A9F248F0095FB34 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A0FBDE671A9F248F0095FB34 /* AppDelegate.h */,
+				A0FBDE681A9F248F0095FB34 /* AppDelegate.m */,
 				A0FBDE641A9F248F0095FB34 /* Info.plist */,
 				A0FBDE651A9F248F0095FB34 /* main.m */,
 			);
@@ -224,10 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FBDE6F1A9F248F0095FB34 /* SecondViewController.m in Sources */,
 				A0FBDE691A9F248F0095FB34 /* AppDelegate.m in Sources */,
-				A0FBDE6C1A9F248F0095FB34 /* FirstViewController.m in Sources */,
 				A0FBDE661A9F248F0095FB34 /* main.m in Sources */,
+				A0FBDE981A9F313F0095FB34 /* Person.m in Sources */,
+				A0FBDE8E1A9F26E50095FB34 /* PersonsTableViewController.m in Sources */,
+				A0FBDE911A9F270B0095FB34 /* AddPersonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RealmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RealmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
