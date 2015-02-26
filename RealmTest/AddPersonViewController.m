@@ -16,12 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (IBAction)SaveAndSubmit:(id)sender {
@@ -50,11 +44,33 @@
 }
 
 - (IBAction)ExportData:(id)sender {
+    NSError* error;
+    NSDictionary *jsonData = [[NSDictionary alloc] initWithObjectsAndKeys: [self personsAsDict],@"persons", nil];
+    
+    //convert NSDictionary to data
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:jsonData options:NSJSONWritingPrettyPrinted error:&error];
+    
+    NSString *dataPrint = [[NSString alloc] initWithData:postData encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"%@",dataPrint);
 
 }
 
--(NSMutableDictionary *)personsAsDict{
-    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
-    return dict;
+-(NSMutableArray *)personsAsDict{
+    
+    NSDateFormatter *dateformatter = [[NSDateFormatter alloc]init];
+    [dateformatter setDateFormat:@"yyyy-MM-dd"];
+    
+    NSMutableArray *returnArray = [[NSMutableArray alloc]init];
+
+    for(Person *p in [Person allObjects]){
+        NSMutableDictionary *personDict = [[NSMutableDictionary alloc]init];
+        [personDict setObject:p.name forKey:@"name"];
+        [personDict setObject:p.address forKey:@"address"];
+        [personDict setObject:[dateformatter stringFromDate:p.born] forKey:@"born"];
+        [personDict setObject:p.job forKey:@"job"];
+        [returnArray addObject:personDict];
+    }
+    return returnArray;
 }
 @end

@@ -10,8 +10,6 @@
 
 @interface PersonsTableViewController ()
 
-@property RLMArray *persons;
-
 @end
 
 @implementation PersonsTableViewController
